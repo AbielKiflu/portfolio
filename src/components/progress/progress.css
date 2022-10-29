@@ -1,0 +1,25 @@
+.progress {
+  stroke: #00f200;
+  stroke-width: 30;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 0;
+  animation: progress 1s linear infinite forwards;
+  position: relative;
+  transform: rotate(-180deg);
+}
+
+@keyframes progress {
+  100% {
+    stroke-dashoffset: 400;
+  }
+}
+
+.parent {
+  position: absolute;
+  top: 10;
+  left: 0;
+  stroke-width: 30;
+  stroke: #00f200;
+  stroke-dasharray: 10;
+  transform: rotate(-180deg);
+}

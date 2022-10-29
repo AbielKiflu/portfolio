@@ -1,0 +1,19 @@
+.text {
+  background-color: transparent !important;
+
+  backdrop-filter: blur(5px);
+  display: inline-block;
+  border: 1;
+  font-size: 1rem;
+  border-bottom-color: #00f200;
+  padding: 0.2rem 0.9rem;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  color: #00f200;
+}
+
+.text:focus {
+  outline: none;
+}
