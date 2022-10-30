@@ -3,15 +3,9 @@
   stroke-width: 30;
   stroke-dasharray: 400;
   stroke-dashoffset: 0;
-  animation: progress 1s ease-out infinite forwards;
+  animation: progress 1s ease-out infinite backwards;
   position: relative;
-  transform: rotate(-180deg);
-}
-
-@keyframes progress {
-  100% {
-    stroke-dashoffset: 400;
-  }
+  transform: rotateY(180deg);
 }
 
 .parent {
@@ -21,5 +15,19 @@
   stroke-width: 30;
   stroke: #00f200;
   stroke-dasharray: 10;
-  transform: rotate(-180deg);
+}
+
+@keyframes progress {
+  100% {
+    stroke-dashoffset: 400;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
