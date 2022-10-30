@@ -3,7 +3,7 @@
   stroke-width: 30;
   stroke-dasharray: 400;
   stroke-dashoffset: 0;
-  animation: progress 1s linear infinite forwards;
+  animation: progress 1s ease-out infinite forwards;
   position: relative;
   transform: rotate(-180deg);
 }

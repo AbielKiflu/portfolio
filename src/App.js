@@ -1,11 +1,11 @@
 import React from "react";
 
-import Progress from "./components/progress/Progress";
+import Badge from "./components/badge/Badge";
 
 function App() {
   return (
     <>
-      <Progress />
+      <Badge badge="32" />
     </>
   );
 }
