@@ -7,11 +7,14 @@ const Header = () => {
   const [hamburger, setHamburger] = useState(false);
   return (
     <nav className="navbar">
-      <button className="hamburger" onClick={() => setHamburger(!hamburger)}>
-        <svg viewBox="0 0 15 8" width="40" className="svg">
-          <path d="M1 1h8M1 4h 8M1 7h8" />
-        </svg>
-      </button>
+      <svg
+        viewBox="0 0 15 8"
+        width="40"
+        className="hamburger"
+        onClick={() => setHamburger(!hamburger)}
+      >
+        <path d="M1 1h8M1 4h 8M1 7h8" />
+      </svg>
 
       <NavItem
         hamburger={hamburger}

@@ -8,11 +8,14 @@ body {
 }
 
 .hamburger {
-  background-color: transparent;
-  border: none;
   cursor: pointer;
-  margin: 0;
   align-self: flex-end;
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1rem;
+  stroke: #00f200;
+  stroke-width: 1;
+  stroke-linecap: round;
 }
 
 .navbar {
@@ -20,19 +23,24 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: growDown 300ms ease-in-out forwards;
+  transform-origin: top center;
 }
 
-.svg {
-  display: inline-block;
-  padding: 1rem;
-  font-size: 1rem;
-  margin-left: 1rem;
-  stroke: #00f200;
-  stroke-width: 1;
-  stroke-linecap: round;
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+  80% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
 }
 
 .navbarMenu {
+  cursor: pointer;
   text-decoration: none;
   color: #00f200;
   padding: 1rem;
@@ -42,9 +50,11 @@ body {
 
 .show {
   display: inline-block;
+  animation: growDown 300ms ease-in-out forwards;
 }
 .hide {
   display: none;
+  animation: growDown 300ms ease-in-out forwards;
 }
 
 .navbarMenu:hover {
@@ -64,7 +74,7 @@ body {
     justify-content: flex-end;
   }
 
-  .svg {
+  .hamburger {
     display: none;
   }
   .navbarMenu {
