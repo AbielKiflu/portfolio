@@ -4,14 +4,14 @@ import "./carusel.css";
 
 const Carusel = () => {
   return (
-    <div class="scene">
-      <div class="cube">
-        <div class="cube__face cube__face--front">front</div>
-        <div class="cube__face cube__face--back">back</div>
-        <div class="cube__face cube__face--right">right</div>
-        <div class="cube__face cube__face--left">left</div>
-        <div class="cube__face cube__face--top">top</div>
-        <div class="cube__face cube__face--bottom">bottom</div>
+    <div className="scene">
+      <div className="cube">
+        <div className=" sides back"></div>
+        <div className="sides left"></div>
+        <div className="sides right"></div>
+        <div className="sides top"></div>
+        <div className="sides bottom"></div>
+        <div className="sides front"></div>
       </div>
     </div>
   );

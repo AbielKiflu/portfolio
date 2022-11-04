@@ -19,8 +19,8 @@ body {
   height: 200px;
   position: relative;
   transform-style: preserve-3d;
-  transform: translateZ(-100px);
-  animation: animate 5s linear infinite forwards;
+  transform: translateZ(-100px) rotateY(35deg);
+  animation: animate 10s linear infinite;
 }
 
 @keyframes animate {
@@ -32,42 +32,51 @@ body {
   }
 }
 
-.cube__face {
+.roof {
+  width: 200px;
+  height: 100px;
   position: absolute;
+}
+
+.head {
+  background-color: rgb(121, 119, 117);
+  transform: translateZ(100px) translateY(-100px) rotateX(50deg);
+}
+
+.tail {
+  background-color: rgb(121, 119, 117);
+  transform: translateZ(-100px) translateY(-100px) rotateX(-50deg);
+}
+
+.sides {
   width: 200px;
   height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 28px;
+  position: absolute;
 }
-
-.cube__face--bottom {
-  background-color: rgba(119, 47, 89, 0.3);
-  transform: rotateX(90deg) translateZ(-100px);
+.front {
+  background-color: rgba(96, 230, 84, 0.7);
+  transform: translateZ(100px);
 }
-
-.cube__face--top {
-  background-color: rgba(66, 34, 180, 0.3);
-  transform: rotateX(-90deg) translateZ(-100px);
+.back {
+  background-color: rgba(147, 84, 230, 0.7);
+  transform: translateZ(-100px);
 }
-
-.cube__face--left {
-  background-color: rgba(25, 192, 34, 0.3);
+.left {
+  background-color: rgba(243, 76, 215, 0.7);
   transform: rotateY(90deg) translateZ(-100px);
 }
 
-.cube__face--right {
-  background-color: rgba(220, 235, 10, 0.3);
+.right {
+  background-color: rgba(189, 47, 3, 0.7);
   transform: rotateY(-90deg) translateZ(-100px);
 }
 
-.cube__face--back {
-  background-color: rgba(233, 53, 21, 0.3);
-  transform: translateZ(-100px);
+.top {
+  background-color: rgba(73, 75, 238, 0.7);
+  transform: rotateX(-90deg) translateZ(-100px);
 }
 
-.cube__face--front {
-  background-color: rgba(17, 243, 205, 0.3);
-  transform: translateZ(100px);
+.bottom {
+  background-color: rgba(61, 7, 87, 0.7);
+  transform: rotateX(90deg) translateZ(-100px);
 }
