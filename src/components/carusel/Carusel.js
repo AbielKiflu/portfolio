@@ -6,6 +6,10 @@ const Carusel = () => {
   return (
     <div className="scene">
       <div className="cube">
+        <div className=" roof head"></div>
+        <div className=" roof tail"></div>
+        <div className=" roof tailLeft"></div>
+        <div className=" roof tailRight"></div>
         <div className=" sides back"></div>
         <div className="sides left"></div>
         <div className="sides right"></div>
