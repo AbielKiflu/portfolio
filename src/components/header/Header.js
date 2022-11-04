@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Contact from "../../pages/Contact";
 import "./header.css";
 
 const Header = () => {
