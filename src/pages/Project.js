@@ -1,10 +1,5 @@
 const Project = () => {
-  return (
-    <div>
-      <h1 style={{ color: "white" }}>Project</h1>
-      <p style={{ color: "white" }}>This is a page</p>
-    </div>
-  );
+  return <div className="container"></div>;
 };
 
 export default Project;

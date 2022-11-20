@@ -1,12 +1,7 @@
 import React from "react";
-
+import "./about.css";
 const About = () => {
-  return (
-    <div>
-      <h1 style={{ color: "white" }}>About</h1>
-      <p style={{ color: "white" }}>This is a page</p>
-    </div>
-  );
+  return <div className="container"></div>;
 };
 
 export default About;
