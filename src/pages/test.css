@@ -4,7 +4,7 @@
   background: green;
   position: relative;
   transform-style: preserve-3d;
-  perspective-origin: center right;
+  perspective-origin: right;
   perspective: 1000px;
 }
 .cards {
