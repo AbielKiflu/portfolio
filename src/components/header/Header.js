@@ -7,8 +7,8 @@ const Header = () => {
   return (
     <nav className="navbar">
       <svg
-        viewBox="0 0 15 8"
-        width="40"
+        viewBox="0 0 10 8"
+        width="30"
         className="hamburger"
         onClick={() => setHamburger(!hamburger)}
       >
