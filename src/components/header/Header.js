@@ -5,52 +5,43 @@ import "./header.css";
 const Header = () => {
   const [hamburger, setHamburger] = useState(false);
   return (
-    <nav className="navbar">
+    <nav>
       <svg
-        viewBox="0 0 10 8"
-        width="30"
-        className="hamburger"
-        onClick={() => setHamburger(!hamburger)}
+        xmlns="http://www.w3.org/2000/svg"
+        width="50"
+        height="50"
+        viewBox="0 0 100 100"
+        className="logo"
       >
-        <path d="M1 1h8M1 4h 8M1 7h8" />
+        <line x1="44" y1="18" x2="75" y2="89" />
+        <line x1="16" y1="64" x2="75" y2="49" />
+        <line x1="16" y1="90" x2="47" y2="17" />
       </svg>
 
-      <NavItem
-        hamburger={hamburger}
-        setHamburger={setHamburger}
-        name={"About"}
-      />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+        width="50"
+        height="50"
+        className="hamburger"
+      >
+        <line x1="5" y1="22" x2="95" y2="22" />
+        <line x1="5" y1="72" x2="95" y2="72" />
+        <line x1="5" y1="47" x2="95" y2="47" />
+      </svg>
 
-      <NavItem
-        hamburger={hamburger}
-        setHamburger={setHamburger}
-        name={"Experience"}
-      />
-
-      <NavItem
-        hamburger={hamburger}
-        setHamburger={setHamburger}
-        name={"Project"}
-      />
-
-      <NavItem
-        hamburger={hamburger}
-        setHamburger={setHamburger}
-        name={"Contact"}
-      />
+      <div className="navMenu">
+        <Link className="navItem" to="/">
+          About
+        </Link>
+        <Link className="navItem" to="/">
+          Project
+        </Link>
+        <Link className="navItem" to="/">
+          Contact
+        </Link>
+      </div>
     </nav>
-  );
-};
-
-const NavItem = ({ hamburger, name, setHamburger }) => {
-  return (
-    <Link
-      className={hamburger ? "navbarMenu show" : "navbarMenu hide"}
-      to={"/" + name.toLowerCase()}
-      onClick={() => setHamburger(false)}
-    >
-      {name}
-    </Link>
   );
 };
 
