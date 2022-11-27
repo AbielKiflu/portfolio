@@ -10,6 +10,11 @@
 :root {
   --bg-color: #121212;
   --text-color: #4ed1d1;
+  --body-color: #000000;
+}
+
+body {
+  background: var(--body-color);
 }
 
 .logo {
@@ -50,6 +55,10 @@ nav {
   text-decoration: none !important;
   padding: 0.5rem 0.5rem;
   color: var(--text-color);
+}
+
+.navItem:hover {
+  outline: solid 0.1rem var(--text-color);
 }
 
 .hide {

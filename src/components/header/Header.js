@@ -39,7 +39,7 @@ const Header = () => {
           Project
         </Link>
         <Link className="navItem" to="/">
-          Contact
+          HireMe
         </Link>
       </div>
     </nav>
