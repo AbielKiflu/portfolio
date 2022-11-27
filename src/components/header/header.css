@@ -29,7 +29,6 @@
 }
 
 nav {
-  position: relative;
   background-color: var(--bg-color);
   color: var(--text-color);
   display: flex;
@@ -38,32 +37,40 @@ nav {
   flex-direction: row;
   padding: 0.5rem 0.5rem;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navMenu {
   width: 100%;
   background-color: var(--bg-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  padding: 0.5rem;
+  display: none;
 }
 
 .navItem {
   text-decoration: none !important;
+  padding: 0.5rem 0.5rem;
   color: var(--text-color);
 }
 
+.hide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
 @media only screen and (min-width: 500px) {
+  nav {
+    flex-wrap: nowrap;
+  }
   .navMenu {
-    all: unset;
     display: flex;
     flex-direction: row;
     gap: 1rem;
     padding: 0.5rem;
     align-items: center;
     background-color: var(--bg-color);
+    justify-content: flex-end;
   }
 
   .hamburger {

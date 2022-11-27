@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./header.css";
 
 const Header = () => {
-  const [hamburger, setHamburger] = useState(false);
+  const [hamburger, setHamburger] = useState(true);
   return (
     <nav>
       <svg
@@ -23,6 +23,7 @@ const Header = () => {
         viewBox="0 0 100 100"
         width="50"
         height="50"
+        onClick={() => setHamburger(!hamburger)}
         className="hamburger"
       >
         <line x1="5" y1="22" x2="95" y2="22" />
@@ -30,7 +31,7 @@ const Header = () => {
         <line x1="5" y1="47" x2="95" y2="47" />
       </svg>
 
-      <div className="navMenu">
+      <div className={hamburger ? "navMenu" : " navMenu hide"}>
         <Link className="navItem" to="/">
           About
         </Link>
