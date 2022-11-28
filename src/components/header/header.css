@@ -87,14 +87,22 @@ nav {
   }
 }
 
+.logocircle {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  fill: var(--bg-color);
+  animation: logoAnimC 1s linear 30ms forwards;
+}
 .logoline1 {
   stroke-dasharray: 78 80;
   stroke-dashoffset: 79;
+
   animation: logoAnim 1s linear 0ms forwards;
 }
 .logoline2 {
   stroke-dasharray: 61 63;
   stroke-dashoffset: 62;
+
   animation: logoAnim 1s linear 20ms forwards;
 }
 .logoline3 {
@@ -103,6 +111,21 @@ nav {
   animation: logoAnim 1s linear 30ms forwards;
 }
 @keyframes logoAnim {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes logoAnimC {
+  0% {
+    stroke-dashoffset: 300;
+  }
+  35% {
+    stroke-dashoffset: 180;
+  }
+  70% {
+    stroke-dashoffset: 100;
+  }
   100% {
     stroke-dashoffset: 0;
   }

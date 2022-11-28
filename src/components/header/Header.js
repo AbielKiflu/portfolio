@@ -13,6 +13,7 @@ const Header = () => {
         viewBox="0 0 100 100"
         className="logo"
       >
+        <circle cx="50" cy="50" r="46" className="logocircle" />
         <path strokeWidth="5" d="M44,18L75,89" className="logoline1"></path>
         <path strokeWidth="5" d="M16,64L75,49" className="logoline2"></path>
         <path strokeWidth="5" d="M16,90L47,17" className="logoline3"></path>
