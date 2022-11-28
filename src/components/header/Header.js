@@ -40,19 +40,29 @@ const Header = () => {
         >
           About
         </Link>
+
+        <Link
+          className="navItem"
+          to="/skills"
+          onClick={() => setHamburger(!hamburger)}
+        >
+          Skills
+        </Link>
+
         <Link
           className="navItem"
           to="/project"
           onClick={() => setHamburger(!hamburger)}
         >
-          Project
+          Projects
         </Link>
+
         <Link
-          className="navItem"
+          className="navItem btn"
           to="/contact"
           onClick={() => setHamburger(!hamburger)}
         >
-          HireMe
+          Contact
         </Link>
       </div>
     </nav>

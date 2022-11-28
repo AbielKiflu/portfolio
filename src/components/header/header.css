@@ -11,10 +11,15 @@
   --bg-color: #121212;
   --text-color: #4ed1d1;
   --body-color: #000000;
+  color: var(--text-color);
 }
 
 body {
-  background: var(--body-color);
+  background: linear-gradient(50deg, var(--bg-color), var(--body-color));
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .logo {
@@ -34,8 +39,7 @@ body {
 }
 
 nav {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background: var(--body-color);
   display: flex;
   flex-wrap: wrap;
   min-width: 10rem;
@@ -47,7 +51,7 @@ nav {
 
 .navMenu {
   width: 100%;
-  background-color: var(--bg-color);
+  background-color: var(--body-color);
   display: none;
 }
 
@@ -59,6 +63,19 @@ nav {
 
 .navItem:hover {
   outline: solid 0.1rem var(--text-color);
+  border-radius: 0.5rem;
+}
+
+.btn {
+  background: var(--text-color);
+  color: var(--body-color);
+  border-radius: 0.5rem;
+}
+
+.btn:hover {
+  background: var(--body-color);
+  color: var(--text-color);
+  border-radius: 0.5rem;
 }
 
 .hide {
@@ -66,6 +83,12 @@ nav {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+
+header {
+  background: red;
+  width: 100vw;
+  height: 100vh;
 }
 
 @media only screen and (min-width: 500px) {
@@ -78,7 +101,7 @@ nav {
     gap: 1rem;
     padding: 0.5rem;
     align-items: center;
-    background-color: var(--bg-color);
+    background-color: var(--body-color);
     justify-content: flex-end;
   }
 
@@ -90,42 +113,25 @@ nav {
 .logocircle {
   stroke-dasharray: 300;
   stroke-dashoffset: 300;
-  fill: var(--bg-color);
-  animation: logoAnimC 1s linear 30ms forwards;
+  animation: logoAnim 1s linear forwards;
 }
+
 .logoline1 {
   stroke-dasharray: 78 80;
   stroke-dashoffset: 79;
-
-  animation: logoAnim 1s linear 0ms forwards;
+  animation: logoAnim 1s linear forwards;
 }
 .logoline2 {
   stroke-dasharray: 61 63;
   stroke-dashoffset: 62;
-
-  animation: logoAnim 1s linear 20ms forwards;
+  animation: logoAnim 1s linear forwards;
 }
 .logoline3 {
   stroke-dasharray: 80 82;
   stroke-dashoffset: 81;
-  animation: logoAnim 1s linear 30ms forwards;
+  animation: logoAnim 1s linear forwards;
 }
 @keyframes logoAnim {
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes logoAnimC {
-  0% {
-    stroke-dashoffset: 300;
-  }
-  35% {
-    stroke-dashoffset: 180;
-  }
-  70% {
-    stroke-dashoffset: 100;
-  }
   100% {
     stroke-dashoffset: 0;
   }

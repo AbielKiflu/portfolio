@@ -1,13 +1,14 @@
 import React from "react";
 import "./about.css";
-import Footer from "../components/footer/Footer";
 
 const About = () => {
   return (
     <div className="container">
-      <svg viewBox="0 0 100 100">
-        <text fill="#000">A</text>
-      </svg>
+      <div className="intro">
+        <h2>Hey, My name is Abiel </h2>
+        <h2>I am a </h2>
+        <h1>WEB DEVELOPER</h1>
+      </div>
     </div>
   );
 };
