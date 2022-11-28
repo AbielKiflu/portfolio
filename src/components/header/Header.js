@@ -13,9 +13,9 @@ const Header = () => {
         viewBox="0 0 100 100"
         className="logo"
       >
-        <line x1="44" y1="18" x2="75" y2="89" />
-        <line x1="16" y1="64" x2="75" y2="49" />
-        <line x1="16" y1="90" x2="47" y2="17" />
+        <path strokeWidth="5" d="M44,18L75,89" className="logoline1"></path>
+        <path strokeWidth="5" d="M16,64L75,49" className="logoline2"></path>
+        <path strokeWidth="5" d="M16,90L47,17" className="logoline3"></path>
       </svg>
 
       <svg
@@ -32,13 +32,25 @@ const Header = () => {
       </svg>
 
       <div className={hamburger ? "navMenu" : " navMenu hide"}>
-        <Link className="navItem" to="/">
+        <Link
+          className="navItem"
+          to="/about"
+          onClick={() => setHamburger(!hamburger)}
+        >
           About
         </Link>
-        <Link className="navItem" to="/">
+        <Link
+          className="navItem"
+          to="/project"
+          onClick={() => setHamburger(!hamburger)}
+        >
           Project
         </Link>
-        <Link className="navItem" to="/">
+        <Link
+          className="navItem"
+          to="/contact"
+          onClick={() => setHamburger(!hamburger)}
+        >
           HireMe
         </Link>
       </div>

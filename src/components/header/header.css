@@ -86,3 +86,24 @@ nav {
     display: none;
   }
 }
+
+.logoline1 {
+  stroke-dasharray: 78 80;
+  stroke-dashoffset: 79;
+  animation: logoAnim 1s linear 0ms forwards;
+}
+.logoline2 {
+  stroke-dasharray: 61 63;
+  stroke-dashoffset: 62;
+  animation: logoAnim 1s linear 20ms forwards;
+}
+.logoline3 {
+  stroke-dasharray: 80 82;
+  stroke-dashoffset: 81;
+  animation: logoAnim 1s linear 30ms forwards;
+}
+@keyframes logoAnim {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
