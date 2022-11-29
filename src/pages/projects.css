@@ -1,3 +1,76 @@
 .container {
-  padding: 0.5rem;
+  margin: 0.5rem;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.scene {
+  width: 210px;
+  height: 240px;
+  position: relative;
+  transform: rotatex(10deg);
+  perspective: 1000px;
+  border-radius: 1rem;
+}
+
+.carousel {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  transform-style: preserve-3d;
+  transform-origin: left bottom;
+}
+
+.carousel__card {
+  position: absolute;
+  color: black;
+  background: var(--glass-color);
+  backdrop-filter: blur(2rem);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 95%;
+  height: 95%;
+  top: 0.8rem;
+  left: 0.8rem;
+}
+
+.carousel__card:nth-child(1) {
+  transform: rotateY(0deg) translateZ(288px);
+}
+.carousel__card:nth-child(2) {
+  transform: rotateY(40deg) translateZ(288px);
+}
+.carousel__card:nth-child(3) {
+  transform: rotateY(80deg) translateZ(288px);
+}
+.carousel__card:nth-child(4) {
+  transform: rotateY(120deg) translateZ(288px);
+}
+.carousel__card:nth-child(5) {
+  transform: rotateY(160deg) translateZ(288px);
+}
+.carousel__card:nth-child(6) {
+  transform: rotateY(200deg) translateZ(288px);
+}
+.carousel__card:nth-child(7) {
+  transform: rotateY(240deg) translateZ(288px);
+}
+.carousel__card:nth-child(8) {
+  transform: rotateY(280deg) translateZ(288px);
+}
+.carousel__card:nth-child(9) {
+  transform: rotateY(320deg) translateZ(288px);
 }

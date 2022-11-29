@@ -12,6 +12,11 @@
   --body-color: #121212;
   --text-color: #4ed1d1;
   --bg-color: #000000;
+  --glass-color: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.02)
+  );
 }
 
 body {
