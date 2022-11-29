@@ -1,7 +1,15 @@
-.container {
+.card {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  background: var(--body-color);
+  border-radius: 0.5rem;
+  min-width: 15rem;
+  min-height: 15rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem var(--bg-color);
+}
+
+.icon {
+  color: pink;
+  transform: scale(5);
 }

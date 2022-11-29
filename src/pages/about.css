@@ -1,9 +1,17 @@
 .container {
+  margin: 0.5rem;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  gap: 0.5rem;
 }
 
 @supports (-webkit-text-stroke: 1px var(--text-color)) {
