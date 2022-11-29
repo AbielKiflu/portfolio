@@ -1,20 +1,103 @@
 import "./projects.css";
-import React from "react";
+import React, { useRef } from "react";
 
 const Project = () => {
+  const carousel = useRef(null);
+  const selectedIndex = useRef(1);
+  const cardCount = useRef(9);
+
+  function rotateCarousel() {
+    var angle = (selectedIndex.current / cardCount.current) * -360;
+    carousel.current.style.transform =
+      "translateZ(-288px) rotateY(" + angle + "deg)";
+    console.log(selectedIndex.current, angle);
+  }
+
   return (
-    <div className="container">
+    <div className="project">
       <div className="scene">
-        <div className="carousel">
-          <div className="carousel__card">A</div>
-          <div className="carousel__card">B</div>
-          <div className="carousel__card">C</div>
-          <div className="carousel__card">D</div>
-          <div className="carousel__card">F</div>
-          <div className="carousel__card">G</div>
-          <div className="carousel__card">H</div>
-          <div className="carousel__card">I</div>
-          <div className="carousel__card">J</div>
+        <div className="carousel" ref={carousel}>
+          <div
+            className="carousel__card"
+            onClick={() => {
+              rotateCarousel();
+              selectedIndex.current++;
+            }}
+          >
+            A
+          </div>
+          <div
+            className="carousel__card"
+            onClick={() => {
+              rotateCarousel();
+              selectedIndex.current++;
+            }}
+          >
+            B
+          </div>
+          <div
+            className="carousel__card"
+            onClick={() => {
+              rotateCarousel();
+              selectedIndex.current++;
+            }}
+          >
+            C
+          </div>
+          <div
+            className="carousel__card"
+            onClick={() => {
+              rotateCarousel();
+              selectedIndex.current++;
+            }}
+          >
+            D
+          </div>
+          <div
+            className="carousel__card"
+            onClick={() => {
+              rotateCarousel();
+              selectedIndex.current++;
+            }}
+          >
+            F
+          </div>
+          <div
+            className="carousel__card"
+            onClick={() => {
+              rotateCarousel();
+              selectedIndex.current++;
+            }}
+          >
+            G
+          </div>
+          <div
+            className="carousel__card"
+            onClick={() => {
+              rotateCarousel();
+              selectedIndex.current++;
+            }}
+          >
+            H
+          </div>
+          <div
+            className="carousel__card"
+            onClick={() => {
+              rotateCarousel();
+              selectedIndex.current++;
+            }}
+          >
+            I
+          </div>
+          <div
+            className="carousel__card"
+            onClick={() => {
+              rotateCarousel();
+              selectedIndex.current++;
+            }}
+          >
+            J
+          </div>
         </div>
       </div>
     </div>

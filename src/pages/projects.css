@@ -1,5 +1,4 @@
-.container {
-  margin: 0.5rem;
+.project {
   -ms-box-orient: horizontal;
   display: -webkit-box;
   display: -moz-box;
@@ -7,29 +6,32 @@
   display: -moz-flex;
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 10rem;
 }
 
 .scene {
   width: 210px;
   height: 240px;
-  position: relative;
-  transform: rotatex(10deg);
+  background: var(--text-color);
   perspective: 1000px;
+  transform-origin: center center;
   border-radius: 1rem;
+  transform: rotateZ(90deg);
+  transition: transform 1s;
 }
 
 .carousel {
-  position: relative;
   height: 100%;
   width: 100%;
   border-radius: 1rem;
+  transform: translateZ(-288px);
   transform-style: preserve-3d;
-  transform-origin: left bottom;
+  transition: transform 1s;
 }
 
 .carousel__card {
@@ -45,6 +47,7 @@
   height: 95%;
   top: 0.8rem;
   left: 0.8rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem var(--bg-color);
 }
 
 .carousel__card:nth-child(1) {
@@ -73,4 +76,11 @@
 }
 .carousel__card:nth-child(9) {
   transform: rotateY(320deg) translateZ(288px);
+}
+
+@media only screen and (min-width: 600px) {
+  .scene {
+    transform: rotateZ(0deg);
+    transition: transform 1s;
+  }
 }
