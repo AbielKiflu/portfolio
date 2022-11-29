@@ -17,12 +17,8 @@
     rgba(255, 255, 255, 0.8),
     rgba(255, 255, 255, 0.01)
   );
-}
-
-body {
   background: var(--bg-color);
   color: var(--text-color);
-  display: flex;
 }
 
 .logo {
@@ -46,13 +42,13 @@ nav {
   background: var(--body-color);
   display: flex;
   flex-wrap: wrap;
-  min-width: 19rem;
-  width: 100vw;
+  min-width: 20rem;
   flex-direction: row;
   padding: 0.5rem 0.5rem;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 5rem;
+  width: 100v;
 }
 
 .navMenu {
@@ -108,6 +104,10 @@ nav {
   .hamburger {
     display: none;
   }
+}
+
+.container {
+  min-width: 20rem;
 }
 
 .logocircle {

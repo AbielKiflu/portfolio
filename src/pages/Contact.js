@@ -3,7 +3,7 @@ import Progress from "../components/progress/Progress";
 import "./test.css";
 
 const Contact = () => {
-  return <div className="container"></div>;
+  return <div className="container">Hi</div>;
 };
 
 export default Contact;

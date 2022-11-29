@@ -6,6 +6,7 @@ import Experience from "./pages/Experience";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
 import Skills from "./pages/Skills";
+import "./app.css";
 function App() {
   return (
     <BrowserRouter>

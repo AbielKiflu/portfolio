@@ -11,13 +11,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  position: relative;
   margin-top: 10rem;
 }
 
 .scene {
   width: 210px;
   height: 240px;
-  background: transparent;
+
   perspective: 1000px;
   transform-origin: center center;
   border-radius: 1rem;
