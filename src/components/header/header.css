@@ -20,13 +20,9 @@
 }
 
 body {
-  position: relative;
-  background: linear-gradient(50deg, var(--bg-color), var(--body-color));
+  background: var(--bg-color);
   color: var(--text-color);
-  height: 100%;
-  margin: 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  display: flex;
 }
 
 .logo {
@@ -51,6 +47,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   min-width: 19rem;
+  width: 100vw;
   flex-direction: row;
   padding: 0.5rem 0.5rem;
   justify-content: space-between;

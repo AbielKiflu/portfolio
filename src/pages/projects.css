@@ -1,4 +1,4 @@
-.project {
+.container {
   -ms-box-orient: horizontal;
   display: -webkit-box;
   display: -moz-box;
@@ -17,7 +17,7 @@
 .scene {
   width: 210px;
   height: 240px;
-  background: var(--text-color);
+  background: transparent;
   perspective: 1000px;
   transform-origin: center center;
   border-radius: 1rem;
@@ -38,49 +38,77 @@
   position: absolute;
   color: black;
   background: var(--glass-color);
-  backdrop-filter: blur(2rem);
   border-radius: 1rem;
   display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  width: 95%;
-  height: 95%;
-  top: 0.8rem;
-  left: 0.8rem;
+  flex-direction: column;
+  padding: 0.3rem;
+  width: 100%;
+  height: 87%;
   box-shadow: 0.2rem 0.2rem 0.2rem var(--bg-color);
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .carousel__card:nth-child(1) {
-  transform: rotateY(0deg) translateZ(288px);
+  transform: rotateY(0deg) rotateZ(-90deg) translateZ(288px);
 }
 .carousel__card:nth-child(2) {
-  transform: rotateY(40deg) translateZ(288px);
+  transform: rotateY(40deg) rotateZ(-90deg) translateZ(288px);
 }
 .carousel__card:nth-child(3) {
-  transform: rotateY(80deg) translateZ(288px);
+  transform: rotateY(80deg) rotateZ(-90deg) translateZ(288px);
 }
 .carousel__card:nth-child(4) {
-  transform: rotateY(120deg) translateZ(288px);
+  transform: rotateY(120deg) rotateZ(-90deg) translateZ(288px);
 }
 .carousel__card:nth-child(5) {
-  transform: rotateY(160deg) translateZ(288px);
+  transform: rotateY(160deg) rotateZ(-90deg) translateZ(288px);
 }
 .carousel__card:nth-child(6) {
-  transform: rotateY(200deg) translateZ(288px);
+  transform: rotateY(200deg) rotateZ(-90deg) translateZ(288px);
 }
 .carousel__card:nth-child(7) {
-  transform: rotateY(240deg) translateZ(288px);
+  transform: rotateY(240deg) rotateZ(-90deg) translateZ(288px);
 }
 .carousel__card:nth-child(8) {
-  transform: rotateY(280deg) translateZ(288px);
+  transform: rotateY(280deg) rotateZ(-90deg) translateZ(288px);
 }
 .carousel__card:nth-child(9) {
-  transform: rotateY(320deg) translateZ(288px);
+  transform: rotateY(320deg) rotateZ(-90deg) translateZ(288px);
 }
 
 @media only screen and (min-width: 600px) {
   .scene {
     transform: rotateZ(0deg);
     transition: transform 1s;
+  }
+
+  .carousel__card:nth-child(1) {
+    transform: rotateY(0deg) rotateZ(0deg) translateZ(288px);
+  }
+  .carousel__card:nth-child(2) {
+    transform: rotateY(40deg) rotateZ(0deg) translateZ(288px);
+  }
+  .carousel__card:nth-child(3) {
+    transform: rotateY(80deg) rotateZ(0deg) translateZ(288px);
+  }
+  .carousel__card:nth-child(4) {
+    transform: rotateY(120deg) rotateZ(0deg) translateZ(288px);
+  }
+  .carousel__card:nth-child(5) {
+    transform: rotateY(160deg) rotateZ(0deg) translateZ(288px);
+  }
+  .carousel__card:nth-child(6) {
+    transform: rotateY(200deg) rotateZ(0deg) translateZ(288px);
+  }
+  .carousel__card:nth-child(7) {
+    transform: rotateY(240deg) rotateZ(0deg) translateZ(288px);
+  }
+  .carousel__card:nth-child(8) {
+    transform: rotateY(280deg) rotateZ(0deg) translateZ(288px);
+  }
+  .carousel__card:nth-child(9) {
+    transform: rotateY(320deg) rotateZ(0deg) translateZ(288px);
   }
 }

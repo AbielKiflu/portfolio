@@ -10,11 +10,16 @@ const Project = () => {
     var angle = (selectedIndex.current / cardCount.current) * -360;
     carousel.current.style.transform =
       "translateZ(-288px) rotateY(" + angle + "deg)";
-    console.log(selectedIndex.current, angle);
   }
 
   return (
-    <div className="project">
+    <div
+      className="container"
+      onScroll={() => {
+        rotateCarousel();
+        selectedIndex.current++;
+      }}
+    >
       <div className="scene">
         <div className="carousel" ref={carousel}>
           <div
@@ -96,7 +101,10 @@ const Project = () => {
               selectedIndex.current++;
             }}
           >
-            J
+            Toggle between class names on different scroll positions - When the
+            user scrolls down 50 pixels from the top of the page, the class name
+            "test" will be added to an element (and removed when scrolled up
+            again).
           </div>
         </div>
       </div>
