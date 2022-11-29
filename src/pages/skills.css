@@ -1,15 +1,18 @@
 .card {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  flex-direction: column;
   background: var(--body-color);
   border-radius: 0.5rem;
   min-width: 15rem;
   min-height: 15rem;
+  gap: 0.5rem;
+  padding: 0.5rem;
   box-shadow: 0.2rem 0.2rem 0.2rem var(--bg-color);
 }
 
 .icon {
-  color: pink;
-  transform: scale(5);
+  width: 5rem;
+  height: 5rem;
 }
