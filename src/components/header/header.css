@@ -8,14 +8,15 @@
 }
 
 :root {
-  --bg-color: #121212;
+  --body-color: #121212;
   --text-color: #4ed1d1;
-  --body-color: #000000;
-  color: var(--text-color);
+  --bg-color: #000000;
 }
 
 body {
+  position: relative;
   background: linear-gradient(50deg, var(--bg-color), var(--body-color));
+  color: var(--text-color);
   height: 100%;
   margin: 0;
   background-repeat: no-repeat;
@@ -27,6 +28,7 @@ body {
   display: inline-block;
   stroke: var(--text-color);
   stroke-width: 5;
+  fill: transparent;
   stroke-linecap: round;
 }
 
@@ -85,12 +87,6 @@ nav {
   gap: 1rem;
 }
 
-header {
-  background: red;
-  width: 100vw;
-  height: 100vh;
-}
-
 @media only screen and (min-width: 500px) {
   nav {
     flex-wrap: nowrap;
@@ -113,23 +109,23 @@ header {
 .logocircle {
   stroke-dasharray: 300;
   stroke-dashoffset: 300;
-  animation: logoAnim 1s linear forwards;
+  animation: logoAnim 2s linear forwards;
 }
 
 .logoline1 {
   stroke-dasharray: 78 80;
   stroke-dashoffset: 79;
-  animation: logoAnim 1s linear forwards;
+  animation: logoAnim 2s linear forwards;
 }
 .logoline2 {
   stroke-dasharray: 61 63;
   stroke-dashoffset: 62;
-  animation: logoAnim 1s linear forwards;
+  animation: logoAnim 2s linear forwards;
 }
 .logoline3 {
   stroke-dasharray: 80 82;
   stroke-dashoffset: 81;
-  animation: logoAnim 1s linear forwards;
+  animation: logoAnim 2s linear forwards;
 }
 @keyframes logoAnim {
   100% {

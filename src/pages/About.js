@@ -1,13 +1,23 @@
 import React from "react";
 import "./about.css";
+import image_pic from "../assets/image/me.jpg";
 
 const About = () => {
   return (
     <div className="container">
       <div className="intro">
-        <h2>Hey, My name is Abiel </h2>
-        <h2>I am a </h2>
-        <h1>WEB DEVELOPER</h1>
+        <h2>
+          Hi, My name is Abiel Kiflu <br />
+          I'm a <br />
+          <b>WEB DEVELOPER</b>
+        </h2>
+        <div className="action">
+          <button className="btn">Download CV</button>
+          <button className="btn">Hire Me </button>
+        </div>
+        <div className="photo">
+          <img src={image_pic} alt="my picture" />
+        </div>
       </div>
     </div>
   );
