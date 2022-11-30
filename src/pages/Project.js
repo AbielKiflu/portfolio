@@ -101,10 +101,7 @@ const Project = () => {
               selectedIndex.current++;
             }}
           >
-            Toggle between class names on different scroll positions - When the
-            user scrolls down 50 pixels from the top of the page, the class name
-            "test" will be added to an element (and removed when scrolled up
-            again).
+            J
           </div>
         </div>
       </div>
