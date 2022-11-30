@@ -6,6 +6,9 @@ const About = () => {
   return (
     <div className="container">
       <div className="intro">
+        <div className="photo">
+          <img src={image_pic} alt="my picture" />
+        </div>
         <h2>
           Hi, My name is Abiel Kiflu <br />
           I'm a <br />
@@ -14,9 +17,6 @@ const About = () => {
         <div className="action">
           <button className="btn">Download CV</button>
           <button className="btn">Hire Me </button>
-        </div>
-        <div className="photo">
-          <img src={image_pic} alt="my picture" />
         </div>
       </div>
     </div>
