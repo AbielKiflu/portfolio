@@ -1,21 +1,6 @@
-.container {
-  -ms-box-orient: horizontal;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
 .card {
   display: flex;
-  justify-content: flex-start;
+  justify-content: stretch;
   align-items: center;
   flex-direction: column;
   background: var(--body-color);
@@ -30,4 +15,12 @@
 .icon {
   width: 5rem;
   height: 5rem;
+}
+
+.skill {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
 }

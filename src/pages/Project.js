@@ -14,7 +14,7 @@ const Project = () => {
 
   return (
     <div
-      className="container"
+      className="project"
       onScroll={() => {
         rotateCarousel();
         selectedIndex.current++;

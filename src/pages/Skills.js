@@ -15,7 +15,7 @@ import "./skills.css";
 
 const Skills = () => {
   return (
-    <div className="container">
+    <div className="skill">
       <div className="card">
         <FaCss3Alt className="icon" />
         <h3>
