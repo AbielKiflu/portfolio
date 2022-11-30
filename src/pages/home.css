@@ -1,3 +1,8 @@
+#root {
+  min-width: 318px;
+  background: var(--background-color);
+}
+
 .home {
   display: flex;
   justify-content: space-around;
@@ -6,6 +11,7 @@
 }
 
 .nav {
+  position: relative;
   box-shadow: 0.2rem 0.2rem 0.2rem var(--bg-color);
   border-radius: 0.5rem;
   display: flex;
@@ -13,9 +19,27 @@
   align-items: center;
   background: linear-gradient(
     to Right,
-    rgba(255, 255, 255, 0.3),
-    rgba(255, 255, 255, 0.2),
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.08)
+    var(--body-color),
+    rgba(66, 65, 65, 0.5)
   );
+}
+
+.nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.nav span {
+  visibility: hidden;
+}
+
+.nav a:hover {
+  color: rgb(29, 132, 139);
+}
+
+.nav a:hover > span {
+  visibility: visible;
 }
