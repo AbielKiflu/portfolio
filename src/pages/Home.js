@@ -15,9 +15,9 @@ import Header from "../components/header/Header";
 const Home = () => {
   const icons = { width: "2rem", height: "2rem" };
   return (
-    <>
+    <section className="home">
       <Header />
-    </>
+    </section>
   );
 };
 
