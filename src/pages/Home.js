@@ -15,8 +15,16 @@ import Header from "../components/header/Header";
 const Home = () => {
   const icons = { width: "2rem", height: "2rem" };
   return (
-    <section className="home">
+    <section className="home" id="home">
       <Header />
+
+      <section className="about" id="about">
+        <About />
+      </section>
+
+      <section className="project" id="project">
+        <Project />
+      </section>
     </section>
   );
 };

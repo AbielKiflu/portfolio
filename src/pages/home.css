@@ -1,15 +1,15 @@
-#root,
-.project,
-.about {
-  min-width: 318px;
-  /*  background: #12353a;*/
-  height: 100vh;
-  padding-top: 2rem;
-}
-
-.home {
+#home {
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
   align-items: center;
   min-width: 318px;
+}
+
+#project,
+#skill,
+#about {
+  min-width: 318px;
+  height: 100vh;
+  padding-top: 2rem;
 }
