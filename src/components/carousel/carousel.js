@@ -25,7 +25,12 @@ const Carousel = ({ data, Cardi: cardi }) => {
               key={card.id}
               onClick={rotateCarousel}
             >
-              {card.name}
+              <h3>{card.title}</h3>
+              <ul>
+                {card.data.map((d) => (
+                  <li key={d}>{d}</li>
+                ))}
+              </ul>
             </CarouselCards>
           );
         })}
@@ -78,6 +83,8 @@ const CarouselCards = styled.div`
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   padding: 1rem;
   width: 100%;
   height: 100%;

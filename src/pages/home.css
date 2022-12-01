@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   min-width: 318px;
+  transition: height 2s ease-in-out;
 }
 
 #project,
@@ -12,4 +13,5 @@
   min-width: 318px;
   height: 100vh;
   padding-top: 2rem;
+  transition: height 2s ease-in-out;
 }

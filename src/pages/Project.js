@@ -5,11 +5,31 @@ import styled from "styled-components";
 
 const Project = () => {
   const data = [
-    { id: 1, name: "John Doe" },
-    { id: 2, name: "Victor Wayne" },
-    { id: 3, name: "Jane Doe" },
-    { id: 4, name: "Jane Doe" },
-    { id: 5, name: "Jane Doe" },
+    {
+      id: 1,
+      title: "Frontend",
+      data: ["Java Script", "CSS", "ReactJs", "Vue"],
+    },
+    {
+      id: 2,
+      title: "Backend",
+      data: ["Laravel php", "ASP DOTNET", "NodeJs"],
+    },
+    {
+      id: 3,
+      title: "Tools",
+      data: ["Github", "Figma", "Trello"],
+    },
+    {
+      id: 4,
+      title: "Databses",
+      data: ["MySql", "Postgre SQL", "Microsoft SQL"],
+    },
+    {
+      id: 5,
+      title: "Others",
+      data: ["Java SE", "Android Studio", "Linux", "Docker"],
+    },
   ];
 
   return <Carousel data={data} />;
