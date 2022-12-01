@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import "./carousel.css";
 import styled from "styled-components";
 
-const Carousel = ({ data }) => {
+const Carousel = ({ data, Cardi: cardi }) => {
   const carousel = useRef(null);
   const selectedIndex = useRef(1);
   const cardCount = useRef(data.length);

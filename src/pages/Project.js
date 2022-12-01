@@ -1,6 +1,7 @@
 import "./projects.css";
 import Carousel from "../components/carousel/Carousel";
 import React, { useRef } from "react";
+import styled from "styled-components";
 
 const Project = () => {
   const data = [
