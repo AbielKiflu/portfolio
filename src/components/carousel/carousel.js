@@ -37,6 +37,11 @@ const Carousel = ({ data, Cardi: cardi }) => {
 export default Carousel;
 
 const Scene = styled.div`
+  --angleZ: -90deg;
+  --angleY: 72deg;
+  --translateZ: 250px;
+  --card-width: 300px;
+  --card-height: 300px;
   width: var(--card-height);
   height: var(--card-width);
   position: relative;
@@ -61,7 +66,7 @@ const Carousels = styled.div`
   height: 100%;
   width: 100%;
   border-radius: 1rem;
-  transform: translateZ(-300px);
+  transform: translateZ(-250px);
   transform-style: preserve-3d;
   transition: transform 1s;
 `;

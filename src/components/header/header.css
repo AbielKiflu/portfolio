@@ -1,16 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
-/* @import url('https://fonts.googleapis.com/css2?family=Saira:wght@100&display=swap'); */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Noto Serif", serif;
 
-  /* font-family: "Saira", sans-serif;*/
+  font-family: "Noto Serif", serif;
 }
 
 :root {
-  --body-color: #121212;
+  --body-color: #091921;
   --text-color: #2b7a99;
   --bg-color: #000000;
   --background-color: #353434;
@@ -19,121 +18,41 @@
     rgba(255, 255, 255, 0.3),
     rgba(255, 255, 255, 0.2)
   );
-  background: var(--bg-color);
+
   color: var(--text-color);
 }
 
-.logo {
-  cursor: pointer;
-  display: inline-block;
-  stroke: var(--text-color);
-  stroke-width: 5;
-  fill: transparent;
-  stroke-linecap: round;
+body {
+  background: #091921;
+  color: var(--text-color);
 }
 
-.hamburger {
-  cursor: pointer;
-  display: inline-block;
-  stroke: var(--text-color);
-  stroke-width: 5;
-  stroke-linecap: round;
-}
-
-nav {
-  background: var(--body-color);
+.nav {
+  position: fixed;
+  top: 0;
+  box-shadow: 0.2rem 0.2rem 0.2rem var(--bg-color);
+  border-radius: 0.5rem;
   display: flex;
-  flex-wrap: wrap;
-  min-width: 20rem;
-  flex-direction: row;
-  padding: 0.5rem 0.5rem;
-  justify-content: space-between;
+  padding: 0.5rem;
+  margin: 0rem 0.5rem;
+  gap: 1rem;
+  justify-content: space-around;
   align-items: center;
-  margin-bottom: 5rem;
+  background: var(--glass-color);
+  border-top: 1px solid rgb(206, 204, 204);
+  border-left: 1px solid rgb(206, 204, 204);
+  backdrop-filter: blur(5px);
+  z-index: 10;
 }
 
-.navMenu {
-  width: 100%;
-  background-color: var(--body-color);
-  display: none;
-}
-
-.navItem {
-  text-decoration: none !important;
-  padding: 0.5rem 0.5rem;
-  color: var(--text-color);
-}
-
-.navItem:hover {
-  outline: solid 0.1rem var(--text-color);
-  border-radius: 0.5rem;
-}
-
-.btn {
-  background: var(--text-color);
-  color: var(--body-color);
-  border-radius: 0.5rem;
-}
-
-.btn:hover {
-  background: var(--body-color);
-  color: var(--text-color);
-  border-radius: 0.5rem;
-}
-
-.hide {
+.nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  text-decoration: none;
+  color: var(--body-color);
 }
 
-@media only screen and (min-width: 600px) {
-  nav {
-    flex-wrap: nowrap;
-  }
-  .navMenu {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    padding: 0.5rem;
-    align-items: center;
-    background-color: var(--body-color);
-    justify-content: flex-end;
-  }
-
-  .hamburger {
-    display: none;
-  }
-}
-
-.container {
-  min-width: 20rem;
-}
-
-.logocircle {
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
-  animation: logoAnim 2s linear forwards;
-}
-
-.logoline1 {
-  stroke-dasharray: 78 80;
-  stroke-dashoffset: 79;
-  animation: logoAnim 2s linear forwards;
-}
-.logoline2 {
-  stroke-dasharray: 61 63;
-  stroke-dashoffset: 62;
-  animation: logoAnim 2s linear forwards;
-}
-.logoline3 {
-  stroke-dasharray: 80 82;
-  stroke-dashoffset: 81;
-  animation: logoAnim 2s linear forwards;
-}
-@keyframes logoAnim {
-  100% {
-    stroke-dashoffset: 0;
-  }
+.nav a:hover {
+  color: rgb(30, 34, 34);
 }

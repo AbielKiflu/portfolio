@@ -1,11 +1,3 @@
-:root {
-  --angleZ: -90deg;
-  --angleY: 60deg;
-  --translateZ: 300px;
-  --card-width: 300px;
-  --card-height: 300px;
-}
-
 .project {
   display: flex;
   flex-direction: column;
