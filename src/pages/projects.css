@@ -8,11 +8,10 @@
 
 .project {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 0.5rem;
-  padding: 5rem 0;
+  gap: 1rem;
 }
 
 .scene {

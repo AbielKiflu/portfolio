@@ -10,7 +10,8 @@ const About = () => {
           <img src={image_pic} alt="my picture" />
         </div>
         <h2>
-          Hi, My name is Abiel Kiflu <br />
+          Hi, My name is <br />
+          Abiel Kiflu <br />
           I'm a <br />
           <b>WEB DEVELOPER</b>
         </h2>
