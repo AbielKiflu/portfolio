@@ -49,6 +49,16 @@ const Scene = styled.div`
   border-radius: 1rem;
   transform: rotateZ(90deg);
   transition: transform 1s;
+
+  @media only screen and (min-width: 600px) {
+    width: var(--card-width);
+    height: var(--card-height);
+    transform: rotateZ(0deg);
+    transition: transform 1s;
+    --angleY: 72deg;
+    --angleZ: 0deg;
+    --translateZ: 300px;
+  }
 `;
 
 const Carousels = styled.div`
