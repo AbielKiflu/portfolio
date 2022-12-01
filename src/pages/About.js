@@ -4,7 +4,7 @@ import image_pic from "../assets/image/me.jpg";
 
 const About = () => {
   return (
-    <div className="container">
+    <div className="about">
       <div className="intro">
         <div className="photo">
           <img src={image_pic} alt="my picture" />

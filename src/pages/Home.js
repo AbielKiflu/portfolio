@@ -8,6 +8,8 @@ import {
   FaRegAddressBook,
 } from "react-icons/fa";
 import Skills from "./Skills";
+import Project from "./Project";
+import About from "./About";
 
 const Home = () => {
   const icons = { width: "2rem", height: "2rem" };
@@ -39,8 +41,11 @@ const Home = () => {
           </a>
         </nav>
       </section>
-      <section id="skill" className="skill">
-        <Skills />
+      <section id="project" className="project">
+        <Project />
+      </section>
+      <section id="about" className="about">
+        <About />
       </section>
     </>
   );

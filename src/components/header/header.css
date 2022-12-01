@@ -16,7 +16,6 @@
   --background-color: #353434;
   --glass-color: linear-gradient(
     to right bottom,
-    rgba(255, 255, 255, 0.8),
     rgba(78, 209, 209, 0.5),
     rgba(255, 255, 255, 0.2)
   );
