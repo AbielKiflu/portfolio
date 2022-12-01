@@ -38,7 +38,7 @@
 .carousel__card {
   position: absolute;
   color: black;
-  background: transparent;
+  background: var(--glass-color);
   border-radius: 1rem;
   display: flex;
   flex-direction: column;

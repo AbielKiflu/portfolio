@@ -31,13 +31,15 @@ const Home = () => {
             <FaGraduationCap style={icons} />
             <span>Skills</span>
           </a>
-          <a href="#contact">
-            <FaFileCode style={icons} />
-            <span>Contact</span>
-          </a>
+
           <a href="#project">
-            <FaRegAddressBook style={icons} />
+            <FaFileCode style={icons} />
             <span>Project</span>
+          </a>
+
+          <a href="#contact">
+            <FaRegAddressBook style={icons} />
+            <span>Contact</span>
           </a>
         </nav>
       </section>
