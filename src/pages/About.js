@@ -14,6 +14,14 @@ const About = () => {
           I'm a <br />
           <b>WEB DEVELOPER</b>
         </h2>
+        <p>
+          The backdrop-filter property allows you to eliminate this extra
+          “background” element and apply filters to the backdrop directly. The
+          backdrop-filter property allows you to eliminate this extra
+          “background” element and apply filters to the backdrop directly. The
+          backdrop-filter property allows you to eliminate this extra
+          “background” element and apply filters to the backdrop directly.
+        </p>
         <div className="action">
           <button className="btn">Download CV</button>
           <button className="btn">Hire Me </button>

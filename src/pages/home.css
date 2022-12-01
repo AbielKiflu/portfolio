@@ -5,11 +5,12 @@
   margin: 0;
   padding: 0;
   font-family: "Noto Serif", serif;
+
   /* font-family: "Saira", sans-serif;*/
 }
 
 :root {
-  --body-color: #121212;
+  --body-color: #091921;
   --text-color: #2b7a99;
   --bg-color: #000000;
   --background-color: #353434;
@@ -18,7 +19,7 @@
     rgba(255, 255, 255, 0.3),
     rgba(255, 255, 255, 0.2)
   );
-  background: var(--bg-color);
+
   color: var(--text-color);
 }
 
@@ -26,7 +27,8 @@
 .project,
 .about {
   min-width: 318px;
-  background: #12353a;
+  /*  background: #12353a;*/
+  background: #091921;
   height: 100vh;
 }
 

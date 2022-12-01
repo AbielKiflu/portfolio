@@ -29,6 +29,7 @@
 .carousel {
   height: 100%;
   width: 100%;
+  background: rgba(129, 45, 5, 0.986);
   border-radius: 1rem;
   transform: translateZ(-288px);
   transform-style: preserve-3d;

@@ -43,11 +43,11 @@ const Home = () => {
           </a>
         </nav>
       </section>
-      <section id="project" className="project">
-        <Project />
-      </section>
       <section id="about" className="about">
         <About />
+      </section>
+      <section id="project" className="project">
+        <Project />
       </section>
     </>
   );
