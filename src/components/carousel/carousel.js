@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Carousel = ({ data }) => {
   const carousel = useRef(null);
   const selectedIndex = useRef(1);
-  const cardCount = useRef(5);
+  const cardCount = useRef(data.length);
 
   // a function that rotates the carousel
   const rotateCarousel = () => {
@@ -18,21 +18,17 @@ const Carousel = ({ data }) => {
   return (
     <Scene>
       <Carousels ref={carousel}>
-        <CarouselCards number={1} onClick={rotateCarousel}>
-          A
-        </CarouselCards>
-        <CarouselCards number={2} onClick={rotateCarousel}>
-          B
-        </CarouselCards>
-        <CarouselCards number={3} onClick={rotateCarousel}>
-          C
-        </CarouselCards>
-        <CarouselCards number={4} onClick={rotateCarousel}>
-          D
-        </CarouselCards>
-        <CarouselCards number={5} onClick={rotateCarousel}>
-          E
-        </CarouselCards>
+        {data.map((card) => {
+          return (
+            <CarouselCards
+              number={card.id}
+              key={card.id}
+              onClick={rotateCarousel}
+            >
+              {card.name}
+            </CarouselCards>
+          );
+        })}
       </Carousels>
     </Scene>
   );
