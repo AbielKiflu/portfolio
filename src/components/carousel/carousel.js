@@ -30,12 +30,24 @@ const Carousel = ({ data, Cardi: cardi }) => {
             >
               <h3>{card.title}</h3>
 
-              <div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "0.5rem",
+                }}
+              >
                 {card.data.map((d) => (
-                  <>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "0.2rem",
+                    }}
+                  >
                     <h5 key={d.language}>{d.language}</h5>
                     <Progress progress={d.progress} />
-                  </>
+                  </div>
                 ))}
               </div>
             </CarouselCards>
