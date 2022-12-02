@@ -12,6 +12,7 @@ const Container = styled.div`
   position: relative;
   width: 300px;
   height: 350px;
+  color: black;
   display: flex;
   gap: 1rem;
   background: gray;
