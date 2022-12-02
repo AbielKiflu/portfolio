@@ -1,74 +1,59 @@
-import React from "react";
-import {
-  FaHtml5,
-  FaSass,
-  FaReact,
-  FaPhp,
-  FaVuejs,
-  FaCss3Alt,
-  FaBootstrap,
-  FaTools,
-  FaLinux,
-  FaDatabase,
-} from "react-icons/fa";
 import "./skills.css";
+import Carousel from "../components/carousel/Carousel";
+import React, { useRef } from "react";
+import styled from "styled-components";
 
 const Skills = () => {
-  return (
-    <div className="skill">
-      <div className="card">
-        <FaCss3Alt className="icon" />
-        <h3>
-          <i>Frontend</i>
-        </h3>
-        <ul>
-          <li>CSS</li>
-          <li>SASS</li>
-          <li>React</li>
-          <li>Vue</li>
-        </ul>
-      </div>
+  const data = [
+    {
+      id: 1,
+      title: "Frontend",
+      data: [
+        { language: "Java Script", progress: 80 },
+        { language: "CSS", progress: 95 },
+        { language: "React", progress: 80 },
+        { language: "Vue", progress: 30 },
+      ],
+    },
+    {
+      id: 2,
+      title: "Backend",
+      data: [
+        { language: "Laravel", progress: 70 },
+        { language: "ASP .NET", progress: 45 },
+        { language: "NodeJs", progress: 20 },
+      ],
+    },
+    {
+      id: 3,
+      title: "Tools",
+      data: [
+        { language: "Github", progress: 90 },
+        { language: "Figma", progress: 75 },
+        { language: "Trello", progress: 90 },
+      ],
+    },
+    {
+      id: 4,
+      title: "Databses",
+      data: [
+        { language: "MySql", progress: 80 },
+        { language: "Microsoft SQL", progress: 80 },
+        { language: "Postgre SQL", progress: 60 },
+      ],
+    },
+    {
+      id: 5,
+      title: "Others",
+      data: [
+        { language: "Java SE", progress: 95 },
+        { language: "Android app", progress: 70 },
+        { language: "Docker", progress: 50 },
+      ],
+    },
+  ];
 
-      <div className="card">
-        <FaPhp className="icon" />
-        <h3>
-          <i>Backend</i>
-        </h3>
-        <ul>
-          <li>Laravel</li>
-          <li>ASP DOTNET</li>
-          <li>Java SE</li>
-          <li>TailWind</li>
-        </ul>
-      </div>
-
-      <div className="card">
-        <FaTools className="icon" />
-        <h3>
-          <i>Tools</i>
-        </h3>
-        <ul>
-          <li>VS Code</li>
-          <li>Visual Studio</li>
-          <li>Android Studio</li>
-          <li>Figma</li>
-          <li>Trello</li>
-        </ul>
-      </div>
-
-      <div className="card">
-        <FaDatabase className="icon" />
-        <h3>
-          <i>Databases</i>
-        </h3>
-        <ul>
-          <li>MS SQL Server</li>
-          <li>MySQL</li>
-          <li>Postgresql</li>
-        </ul>
-      </div>
-    </div>
-  );
+  return <Carousel data={data} />;
 };
 
 export default Skills;

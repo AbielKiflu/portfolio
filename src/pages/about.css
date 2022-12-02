@@ -29,6 +29,8 @@
 }
 
 .btn {
+  text-decoration: none !important;
+  padding: 0.8rem;
   background: var(--text-color);
   color: var(--body-color);
   border-radius: 0.5rem;

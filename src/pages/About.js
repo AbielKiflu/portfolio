@@ -1,6 +1,7 @@
 import React from "react";
 import "./about.css";
 import image_pic from "../assets/image/me.jpg";
+import myCv from "../assets/pdf/cv.pdf";
 
 const About = () => {
   return (
@@ -17,8 +18,12 @@ const About = () => {
           “background” element and apply filters to the backdrop directly.
         </p>
         <div className="action">
-          <button className="btn">Download CV</button>
-          <button className="btn">Hire Me </button>
+          <a className="btn" href={myCv} target="_blank" rel="noreferrer">
+            Download CV
+          </a>
+          <a className="btn" href="#contact" rel="noreferrer">
+            Hire Me
+          </a>
         </div>
       </div>
     </div>
