@@ -21,11 +21,11 @@ const Carousel = ({ data, Cardi: cardi }) => {
   return (
     <Scene>
       <Carousels ref={carousel}>
-        {data.map((card) => {
+        {data.map((card, index) => {
           return (
             <CarouselCards
               number={card.id}
-              key={card.id}
+              key={index}
               onClick={rotateCarousel}
             >
               <h3>{card.title}</h3>
@@ -38,15 +38,16 @@ const Carousel = ({ data, Cardi: cardi }) => {
                   gap: "0.5rem",
                 }}
               >
-                {card.data.map((d) => (
+                {card.data.map((d, index) => (
                   <div
+                    key={index}
                     style={{
                       display: "flex",
                       flexDirection: "column",
                       gap: "0.2rem",
                     }}
                   >
-                    <h5 key={d.language}>{d.language}</h5>
+                    <h5>{d.language}</h5>
                     <Progress progress={d.progress} />
                   </div>
                 ))}

@@ -10,7 +10,9 @@ const About = () => {
         <img src={image_pic} alt="my picture" />
       </div>
       <div className="intro">
-        Hi, My name is <br />
+        <p className="intro__name">
+          Hi, My name is <br />
+        </p>
         <h2>Abiel Kiflu </h2> I'm a<h2>WEB DEVELOPER</h2>
         <p>
           “background” element and apply filters to the backdrop directly. The

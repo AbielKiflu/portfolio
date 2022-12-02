@@ -23,9 +23,15 @@
   gap: 1rem;
 }
 
+.intro__name::first-letter {
+  font-size: 2rem;
+}
+
 .intro p {
   max-width: 300px;
   text-align: center;
+  font-weight: 500;
+  font-style: italic;
 }
 
 .btn {
