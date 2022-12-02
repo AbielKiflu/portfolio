@@ -32,6 +32,7 @@ const Carousel = ({ data, Cardi: cardi }) => {
 
               <div
                 style={{
+                  width: "80%",
                   display: "flex",
                   flexDirection: "column",
                   gap: "0.5rem",
