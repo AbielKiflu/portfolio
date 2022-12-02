@@ -15,9 +15,8 @@ const About = () => {
         </p>
         <h2>Abiel Kiflu </h2> I'm a<h2>WEB DEVELOPER</h2>
         <p>
-          “background” element and apply filters to the backdrop directly. The
-          backdrop-filter property allows you to eliminate this extra
-          “background” element and apply filters to the backdrop directly.
+          I enjoy programming, I like creating pixel perfect user interfaces
+          with interactive animations.
         </p>
         <div className="action">
           <a className="btn" href={myCv} target="_blank" rel="noreferrer">

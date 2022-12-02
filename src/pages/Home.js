@@ -25,6 +25,10 @@ const Home = () => {
       <section className="skill" id="skill">
         <Skills />
       </section>
+
+      <section className="project" id="project">
+        <Project />
+      </section>
     </section>
   );
 };

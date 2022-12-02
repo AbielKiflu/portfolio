@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import styled from "styled-components";
-import "./carousel.css";
 import Progress from "../progress/Progress";
 
 //https://www.youtube.com/watch?v=27JtRAI3QO8
@@ -47,7 +46,7 @@ const Carousel = ({ data, Cardi: cardi }) => {
                       gap: "0.2rem",
                     }}
                   >
-                    <h5>{d.language}</h5>
+                    <p>{d.language}</p>
                     <Progress progress={d.progress} />
                   </div>
                 ))}
