@@ -4,7 +4,13 @@ import styled from "styled-components";
 import Card from "../components/card/Card";
 
 const Project = () => {
-  return <Card />;
+  return (
+    <section id="project" className="project">
+      <Card />
+      <Card />
+      <Card />
+    </section>
+  );
 };
 
 export default Project;

@@ -10,7 +10,7 @@
 #project,
 #skill,
 #about {
-  outline: solid 1px red;
+  /* outline: solid 1px red;*/
   min-width: 318px;
   height: 100vh;
   width: 90vw;
