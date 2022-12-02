@@ -5,20 +5,13 @@ import image_pic from "../assets/image/me.jpg";
 const About = () => {
   return (
     <div className="about">
+      <div className="photo">
+        <img src={image_pic} alt="my picture" />
+      </div>
       <div className="intro">
-        <div className="photo">
-          <img src={image_pic} alt="my picture" />
-        </div>
-        <h2>
-          Hi, My name is <br />
-          Abiel Kiflu <br />
-          I'm a <br />
-          <b>WEB DEVELOPER</b>
-        </h2>
+        Hi, My name is <br />
+        <h2>Abiel Kiflu </h2> I'm a<h2>WEB DEVELOPER</h2>
         <p>
-          The backdrop-filter property allows you to eliminate this extra
-          “background” element and apply filters to the backdrop directly. The
-          backdrop-filter property allows you to eliminate this extra
           “background” element and apply filters to the backdrop directly. The
           backdrop-filter property allows you to eliminate this extra
           “background” element and apply filters to the backdrop directly.

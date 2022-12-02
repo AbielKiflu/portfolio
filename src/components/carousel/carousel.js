@@ -1,6 +1,9 @@
 import React, { useRef } from "react";
-import "./carousel.css";
 import styled from "styled-components";
+import "./carousel.css";
+import Progress from "../progress/Progress";
+
+//https://www.youtube.com/watch?v=27JtRAI3QO8
 
 const Carousel = ({ data, Cardi: cardi }) => {
   const carousel = useRef(null);
@@ -26,11 +29,15 @@ const Carousel = ({ data, Cardi: cardi }) => {
               onClick={rotateCarousel}
             >
               <h3>{card.title}</h3>
-              <ul>
+
+              <div>
                 {card.data.map((d) => (
-                  <li key={d}>{d}</li>
+                  <>
+                    <h5 key={d.language}>{d.language}</h5>
+                    <Progress progress={d.progress} />
+                  </>
                 ))}
-              </ul>
+              </div>
             </CarouselCards>
           );
         })}
@@ -79,6 +86,7 @@ const Carousels = styled.div`
 const CarouselCards = styled.div`
   position: absolute;
   color: black;
+  font-size: 1.2rem;
   background: var(--glass-color);
   border-radius: 1rem;
   display: flex;

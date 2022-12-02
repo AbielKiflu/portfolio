@@ -8,27 +8,48 @@ const Project = () => {
     {
       id: 1,
       title: "Frontend",
-      data: ["Java Script", "CSS", "ReactJs", "Vue"],
+      data: [
+        { language: "Java Script", progress: 80 },
+        { language: "CSS", progress: 95 },
+        { language: "React", progress: 80 },
+        { language: "Vue", progress: 30 },
+      ],
     },
     {
       id: 2,
       title: "Backend",
-      data: ["Laravel php", "ASP DOTNET", "NodeJs"],
+      data: [
+        { language: "Laravel", progress: 70 },
+        { language: "ASP .NET", progress: 45 },
+        { language: "NodeJs", progress: 20 },
+      ],
     },
     {
       id: 3,
       title: "Tools",
-      data: ["Github", "Figma", "Trello"],
+      data: [
+        { language: "Github", progress: 90 },
+        { language: "Figma", progress: 75 },
+        { language: "Trello", progress: 90 },
+      ],
     },
     {
       id: 4,
       title: "Databses",
-      data: ["MySql", "Postgre SQL", "Microsoft SQL"],
+      data: [
+        { language: "MySql", progress: 80 },
+        { language: "Microsoft SQL", progress: 80 },
+        { language: "Postgre SQL", progress: 60 },
+      ],
     },
     {
       id: 5,
       title: "Others",
-      data: ["Java SE", "Android Studio", "Linux", "Docker"],
+      data: [
+        { language: "Java SE", progress: 95 },
+        { language: "Android app", progress: 70 },
+        { language: "Docker", progress: 50 },
+      ],
     },
   ];
 

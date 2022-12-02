@@ -1,17 +1,27 @@
 import React from "react";
+import styled from "styled-components";
 import "./progress.css";
 
-const Progress = ({ name }) => {
+const Progress = ({ progress }) => {
   return (
-    <>
-      <svg width="400" height="100" className="progress">
-        <path d="M0 20 H400" />
-      </svg>
-      <svg width="400" height="100" className="parent">
-        <path d="M0 20 H400" />
-      </svg>
-    </>
+    <ProgressBar>
+      <ProgressInner progress={progress} />
+    </ProgressBar>
   );
 };
 
 export default Progress;
+
+const ProgressBar = styled.div`
+  background: black;
+  width: 80%;
+  height: 0.6rem;
+  border-radius: 0.5rem;
+`;
+
+const ProgressInner = styled.div`
+  background: gray;
+  width: ${(prop) => prop.progress}%;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+`;
