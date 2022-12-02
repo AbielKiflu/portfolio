@@ -10,7 +10,7 @@
 
 :root {
   --body-color: #091921;
-  --text-color: #2b7a99;
+  --text-color: rgb(194, 190, 190);
   --bg-color: #000000;
   --background-color: #353434;
   --glass-color: linear-gradient(
@@ -23,7 +23,7 @@
 }
 
 body {
-  background: #091921;
+  background: var(--body-color);
   color: var(--text-color);
 }
 

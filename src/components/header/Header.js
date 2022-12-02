@@ -15,27 +15,27 @@ const Header = () => {
     <nav className="nav">
       <a href="#home">
         <FaHome style={icons} />
-        <span>Home</span>
+        <span aria-aria-label="Home Menu Item">Home</span>
       </a>
 
       <a href="#about">
         <FaUserAlt style={icons} />
-        <span>About</span>
+        <span aria-aria-label="About Menu Item">About</span>
       </a>
 
       <a href="#skill">
         <FaGraduationCap style={icons} />
-        <span>Skills</span>
+        <span aria-aria-label="Skills Menu Item">Skills</span>
       </a>
 
       <a href="#project">
         <FaFileCode style={icons} />
-        <span>Project</span>
+        <span aria-aria-label="Prject Menu Item">Project</span>
       </a>
 
       <a href="#contact">
         <FaRegAddressBook style={icons} />
-        <span>Contact</span>
+        <span aria-aria-label="Contact Menu Item">Contact</span>
       </a>
     </nav>
   );

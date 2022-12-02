@@ -106,9 +106,11 @@ const CarouselCards = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  cursor: pointer;
   padding: 1rem;
   width: 100%;
   height: 100%;
+
   box-shadow: 0.2rem 0.3rem 0.5rem var(--bg-color);
   border-top: 1px solid rgb(206, 204, 204);
   border-left: 1px solid rgb(206, 204, 204);
