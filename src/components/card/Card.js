@@ -2,12 +2,9 @@ import styled from "styled-components";
 import { BsGithub } from "react-icons/bs";
 import { IoFolderOpenSharp } from "react-icons/io5";
 
-const Card = () => {
+const Card = ({ data }) => {
   const iconStyle = { fontSize: "2rem" };
-  const data = {
-    title: "Netflix Clone",
-    image: require("../../assets/image/netflix.jpg"),
-  };
+
   return (
     <Container>
       <Detail>
