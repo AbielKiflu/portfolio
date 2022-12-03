@@ -17,7 +17,6 @@ const Home = () => {
   return (
     <section className="home" id="home">
       <Header />
-
       <section className="about" id="about">
         <About />
       </section>
