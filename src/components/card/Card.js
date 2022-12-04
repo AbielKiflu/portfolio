@@ -9,7 +9,7 @@ const Card = ({ data }) => {
     <Container>
       <Detail>
         <h2 style={{ color: "black" }}>{data.title}</h2>
-        <ImageData src={data.image} />
+        <ImageData src={data.image} alt={data.title} />
       </Detail>
       <BsGithub style={iconStyle} />
       <IoFolderOpenSharp style={iconStyle} />
