@@ -11,7 +11,7 @@ const Project = () => {
     },
     {
       title: "Pomodoro",
-      image: require("../assets/image/pomodoro.jpg"),
+      image: require("../assets/image/pomodoro.PNG"),
     },
     {
       title: "weather",
