@@ -20,7 +20,8 @@ const Skills = () => {
       title: "Backend",
       data: [
         { language: "Laravel", progress: 70 },
-        { language: "ASP .NET", progress: 45 },
+        { language: "ASP .NET", progress: 60 },
+        { language: "SpringBoot", progress: 70 },
         { language: "NodeJs", progress: 20 },
       ],
     },
