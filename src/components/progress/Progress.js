@@ -24,4 +24,5 @@ const ProgressInner = styled.div`
   width: ${(prop) => prop.progress}%;
   height: 0.5rem;
   border-radius: 0.5rem;
+  transition: width 2s linear;
 `;
