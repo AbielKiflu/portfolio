@@ -7,12 +7,12 @@ const Card = ({ data }) => {
 
   return (
     <Container>
-      <Detail>
-        <h2 style={{ color: "black" }}>{data.title}</h2>
-        <ImageData src={data.image} alt={data.title} />
-      </Detail>
-      <BsGithub style={iconStyle} />
-      <IoFolderOpenSharp style={iconStyle} />
+      <h2 style={{ color: "black" }}>{data.title}</h2>
+      <ImageData src={data.image} alt={data.title} />
+      <Footer>
+        <BsGithub style={iconStyle} />
+        <IoFolderOpenSharp style={iconStyle} />
+      </Footer>
     </Container>
   );
 };
@@ -23,8 +23,9 @@ const Container = styled.div`
   height: 300px;
   color: black;
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
+  border-radius: 0.5rem;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: 3rem;
   background: gray;
@@ -39,19 +40,12 @@ const ImageData = styled.img`
   object-fit: contain;
 `;
 
-const Detail = styled.div`
-  position: absolute;
-  height: 90%;
-  color: black;
-  width: 90%;
-  top: -15%;
-  left: 5%;
+const Footer = styled.div`
   display: flex;
+  flex-direction: row;
   align-items: center;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-  background: white;
+  justify-content: space-around;
+  gap: 0.5rem;
   clip-path: polygon(
     19% 0,
     100% 0,
